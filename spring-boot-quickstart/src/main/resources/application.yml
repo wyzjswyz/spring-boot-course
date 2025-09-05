@@ -1,3 +1,9 @@
 server:
   port: 8888
 
+#
+my:
+  mood:
+    today: "周五"
+    content: "周末"
+    author: "zds"
