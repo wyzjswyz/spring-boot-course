@@ -1,0 +1,13 @@
+package top.zds;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ConfigApplication {
+    public static void main(String[] args) {
+//        System.setProperty("server.port", "8081");
+        SpringApplication.run(ConfigApplication.class, args);
+//        System.out.println("http://localhost:8081/sms");
+    }
+}

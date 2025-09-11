@@ -1,9 +1,25 @@
 server:
-  port: 8888
+  port: 8081
 
-#
 my:
   mood:
     today: "周五"
-    content: "周末"
+    content: "开心"
     author: "zds"
+  feature:
+    helloSwitch: false
+    closeMsg: "接口开放中，欢迎访问我的第一个spring boot项目！！！"
+    #//closeMsg: "该接口正在维护中，十分钟之后再来吧！"
+
+zds:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9860a9c401991a72fa94202c
+      accountToken: 04c589a75846437fa95227c43ae0a8c2
+      appId: 2c94811c9860a9c401991a72fc0b2033
+      templateId: 1
+      #templateId: 01083035690
+
+
