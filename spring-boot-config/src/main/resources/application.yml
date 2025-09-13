@@ -15,7 +15,7 @@ spring:
   mail:
     host: smtp.qq.com #邮件服务器地址，QQ邮箱的SMTP服务器固定写法
     username: 2646930194@qq.com # 发件⼈邮箱地址
-    password: eoecnecvyenseccc # 客户端授权码（不是登录密码，需在Q邮箱⾥开通SMTP服务获取）
+    password:  # 客户端授权码（不是登录密码，需在Q邮箱⾥开通SMTP服务获取）
     properties.mail.smtp.ssl.enable: true # 是否启⽤SSL加密，465端⼝必须true
     protocol: smtp # 邮件发送协议，⼀般就是smtp
     properties.mail.smtp.auth: true # 是否需要⽤户名和密码验证，QQ邮箱必须true

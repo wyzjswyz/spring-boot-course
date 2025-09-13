@@ -12,7 +12,8 @@ import top.zds.Team;
 public class TeamController {
 //    新增团队
     @PostMapping("/team")
-    public ResponseEntity<Team> addTeam(@Validated @RequestBody Team team){
+    public ResponseEntity<Team> addTeam(
+            @Validated @RequestBody Team team){
         return ResponseEntity.ok(team);
     }
 }
