@@ -12,4 +12,54 @@ spring:
     multipart:
       max-file-size: 10MB     # 单个上传⽂件⼤⼩限定为10M，默认值为1M
       max-request-size: 100MB # 单次上传⽂件⼤⼩限定为100M，默认值为10M
+  mail:
+    host: smtp.qq.com #邮件服务器地址，QQ邮箱的SMTP服务器固定写法
+    username: 2646930194@qq.com # 发件⼈邮箱地址
+    password: eoecnecvyenseccc # 客户端授权码（不是登录密码，需在Q邮箱⾥开通SMTP服务获取）
+    properties.mail.smtp.ssl.enable: true # 是否启⽤SSL加密，465端⼝必须true
+    protocol: smtp # 邮件发送协议，⼀般就是smtp
+    properties.mail.smtp.auth: true # 是否需要⽤户名和密码验证，QQ邮箱必须true
+    properties.mail.smtp.port: 465 # SMTP端⼝号，常⽤465(SSL)或587(TLS)
+    properties.mail.display.sendmail: Spring Boot # 邮件显示的发件⼈别名（随意）
+    properties.mail.display.sendname: Spring Boot Email # 邮件显示的发件⼈名称（随意）
+    properties.mail.smtp.starttls.enable: true # 是否启⽤TLS加密，587端⼝⼀般需要
+    properties.mail.smtp.starttls.required: true # 是否强制使⽤TLS
+    default-encoding: utf-8 # 邮件默认字符集，防⽌乱码
 
+custom:
+  qrcode:
+    content: "https://www.baidu.com"
+
+
+#server:
+#  port: 8081
+#
+#team:
+#  leader: "zds"
+#  phone: "17366238426"
+#  age: "1"
+#  createDate: "2018-09-01"
+#
+#spring:
+#  servlet:
+#    multipart:
+#      max-file-size: 10MB     # 单个上传⽂件⼤⼩限定为10M，默认值为1M
+#      max-request-size: 100MB # 单次上传⽂件⼤⼩限定为100M，默认值为10M
+#
+#custom:
+#  qrcode:
+#    content: "https://www.baidu.com"
+#spring:
+#  mail:
+#    host: smtp.qq.com #邮件服务器地址，QQ邮箱的SMTP服务器固定写法
+#    username: xx@qq.com # 发件⼈邮箱地址
+#    password: xxxxxxxxxxx # 客户端授权码（不是登录密码，需在Q邮箱⾥开通SMTP服务获取）
+#    protocol: smtp # 邮件发送协议，⼀般就是smtp
+#    properties.mail.smtp.auth: true # 是否需要⽤户名和密码验证，QQ邮箱必须true
+#    properties.mail.smtp.port: 465 # SMTP端⼝号，常⽤465(SSL)或587(TLS)
+#    properties.mail.display.sendmail: Spring Boot # 邮件显示的发件⼈别名（随意）
+#    properties.mail.display.sendname: Spring Boot Email # 邮件显示的发件⼈名称（随意）
+#    properties.mail.smtp.starttls.enable: true # 是否启⽤TLS加密，587端⼝⼀般需要
+#    properties.mail.smtp.starttls.required: true # 是否强制使⽤TLS
+#    properties.mail.smtp.ssl.enable: true # 是否启⽤SSL加密，465端⼝必须true
+#    default-encoding: utf-8 # 邮件默认字符集，防⽌乱码

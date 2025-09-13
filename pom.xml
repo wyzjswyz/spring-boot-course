@@ -38,6 +38,7 @@
     </properties>
 <!--    添加公共依赖-->
     <dependencies>
+
 <!--       阿里云oss-->
         <!-- https://mvnrepository.com/artifact/com.aliyun.oss/aliyun-sdk-oss -->
         <dependency>
@@ -50,25 +51,6 @@
             <artifactId>aliyun-java-sdk-core</artifactId>
             <version>4.7.6</version>
         </dependency>
-
-<!--        &lt;!&ndash;JAXB相关依赖&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>javax.xml.bind</groupId>-->
-<!--            <artifactId>jaxb-api</artifactId>-->
-<!--            <version>2.3.1</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>javax.activation</groupId>-->
-<!--            <artifactId>activation</artifactId>-->
-<!--            <version>1.1.1</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; no more than 2.3.3&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.glassfish.jaxb</groupId>-->
-<!--            <artifactId>jaxb-runtime</artifactId>-->
-<!--            <version>2.3.3</version>-->
-<!--        </dependency>-->
-
 
         <!-- 添加lambok-->
         <dependency>

@@ -1,4 +1,4 @@
-package top.zds.model;
+package top.zds;
 
 
 import jakarta.validation.constraints.*;
