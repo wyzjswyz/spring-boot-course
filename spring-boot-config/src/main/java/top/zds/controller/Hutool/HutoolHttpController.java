@@ -1,4 +1,4 @@
-package top.zds.controller;
+package top.zds.controller.Hutool;
 
 import cn.hutool.http.HttpUtil;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -23,6 +23,13 @@ public class MailServiceImpl implements MailService {
     private String from;
     @Resource
     private JavaMailSender javaMailSender;
+
+    /**
+     *
+     * @param mail
+     *简单邮件信息
+     * @return
+     */
     @Override
     public ResultStatus sendSimpleMail(Mail mail) {
         //发送简单邮件，根据发送情况返回不同信息
@@ -40,6 +47,12 @@ public class MailServiceImpl implements MailService {
         }
     }
 
+    /**
+     *
+     * @param mail
+     *网页邮件信息
+     * @return
+     */
     @Override
     public ResultStatus sendHTMLMail(Mail mail) {
         try {
@@ -56,8 +69,13 @@ public class MailServiceImpl implements MailService {
             return ResultStatus.FAIL;
         }
     }
-    /*
-     * 发送带附件的邮件
+
+    /**
+     *
+     * @param mail
+     *带附件邮件信息
+     * @param files
+     * @return
      */
     @Override
     public ResultStatus sendAttachmentsMail(Mail mail, MultipartFile[] files) {

@@ -1,4 +1,4 @@
-package top.zds.controller;
+package top.zds.controller.Hutool;
 
 import cn.hutool.captcha.CaptchaUtil;
 import cn.hutool.captcha.LineCaptcha;

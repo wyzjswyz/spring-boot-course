@@ -1,6 +1,5 @@
 package top.zds.controller;
 
-import enums.ApiResponse;
 import enums.ResultStatus;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -9,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import top.zds.Mail;
+import top.zds.common.ApiResponse;
 import top.zds.service.MailService;
 
 @RestController
